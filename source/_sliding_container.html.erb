@@ -1,0 +1,23 @@
+<div class="sliding-container">
+
+  <aside class="sliding-container-aside">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate modi explicabo recusandae numquam esse cumque enim nisi nobis! Aspernatur obcaecati voluptas rerum aut dolorem sint voluptatum, nisi eveniet! Ducimus, repudiandae.</p>  
+  </aside>
+
+  <div class="sliding-container-button-container">
+    <button class="sliding-container-button">Filter</button>
+  </div>
+
+  <section class="sliding-container-main">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui reprehenderit incidunt fugit culpa ab cum perspiciatis error, maiores molestias, corrupti obcaecati, earum distinctio eos, animi quaerat exercitationem consectetur doloremque ipsum.</section>
+
+</div>
+
+<script>
+  $(document).ready(function(){
+    $('.sliding-container-button').on('click touchstart',function (e) {
+      $('.sliding-container').toggleClass('is-visible');
+      e.preventDefault();
+    });
+  });
+</script>
